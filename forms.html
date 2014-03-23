@@ -1,27 +1,52 @@
+<?php
+    session_start();
+    if ( isset($_GET["sugar"]) && isset($_GET["spice"]) &&
+        isset($_GET["vanilla"]) ) {
+        $_SESSION['sugar'] = $_GET['street'];
+        $_SESSION['spice'] = $_GET['city'];
+        $_SESSION['vanilla'] = $_GET['vanilla'];
+        header( 'Location: index.php' ) ;
+        return;
+    }      
+?> <!-- IGNORE FOR NOW -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Comp Registration</title>
-  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <header>
+	<header>
 
-  </header>
+	</header>
 
-  <!-- JOSH -->
-  <!-- SASHA -->
-  <!-- LAWRENCE -->
+<p>Sign up for ballroom dancing! </p>
+  <form method="post">
+<p>Name: <input type="float" name="sugar" size="5" 
+  value="<?php echo(htmlentities($sugar)); ?>"></p>
+<p>Age: <input type="float" name="spice" size="5" 
+  value="<?php echo(htmlentities($spice)); ?>"> </p>
+<p>Etc: <input type="float" name="nice" size="5" 
+  value="<?php echo(htmlentities($vanilla)); ?>"> </p>
+<p>
 
-  <footer>
+    <input type="submit" value="Update">
+<input type="button" value="Logout"
+  onclick="location.href='logout.php'; return false"></p>
+</form>
 
-  </footer>
+	<footer>
 
-  <script src="javascript.js"></script>
+	</footer>
+
+	<script src="javascript.js"></script>
 
 </body>
+
 </html>
