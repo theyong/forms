@@ -47,7 +47,10 @@
 					</div>
 					<div class="col-xs-6">
 						Verify Email Address:
-						<input type="text" name="email1check" id="input" onchange="checkfollow(this)">
+						<input type="text" name="email1check" id="input" onchange="checklead(this)">
+					</div>
+					<div class="col-xs-6">
+						<p id="leaderror"></p>
 					</div>
 				</div>
 
@@ -90,6 +93,9 @@
 					Verify Email Address:
 					<input type="text" name="email2check" id="input" onchange="checkfollow(this)">
 				</div>
+				<div class="col-xs-6">
+					<p id="followerror"></p>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-7">
@@ -105,7 +111,7 @@
 
 		<section>
 			<div class="row">
-				<p>Select Your Dances</p>
+				<h2>Select Your Dances</h2>
 				<p>
 					<label for="level1">Level:
 						<select name="level1" id="level1">
