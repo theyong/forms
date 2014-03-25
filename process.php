@@ -1,4 +1,5 @@
 <?php
+    //take everything and put it into the CSV file
     $filename = "formFile.csv";
     
     $handle = fopen($filename, 'a');
