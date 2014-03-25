@@ -1,6 +1,8 @@
 
 #input {
 	border-radius: 3px;
+	width: 100%;
+	margin-top: 3px;
 }
 
 body {
@@ -14,4 +16,8 @@ h1 {
 
 h2 {
 	font-size: 3em;
+}
+
+.row {
+	margin: 1em;
 }
