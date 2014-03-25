@@ -11,9 +11,9 @@ Do this twice (once for lead, once for follow)
   - Phone
   - Email (does it already exist?)
 }
-DONE
+*DONE
 
 - Category
 - Levels of dance
 - Which dances in that level?
-IN PROGRESS
+*IN PROGRESS
