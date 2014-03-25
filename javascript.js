@@ -1,9 +1,9 @@
-function checkEmail(theForm) {
-	alert("I got here");
-	if (theForm.email1.value != theForm.email1check.value) {
-		alert('Those emails don\'t match!');
-		return false;
-	} else {
-		return true;
-	}
+//called from onChange
+function check(input) {
+    if (input.value != document.getElementById('email_addr').value) {
+        input.setCustomValidity('The two email addresses must match.') }
+    else {
+        //input is valid -- reset the error message
+        input.setCustomValidity('');
+    }
 }
