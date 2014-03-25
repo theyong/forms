@@ -1,5 +1,5 @@
 //called from onChange
-function check1(input) {
+function checklead(input) {
 	if (document.getElementById('email1').value != input) {
 		input.setCustomValidity("The two lead's email addresses must match!")
 	} else {
@@ -8,7 +8,7 @@ function check1(input) {
 	}
 }
 
-function check2(input) {
+function checkfollow(input) {
 	if (document.getElementById('email2').value != input) {
 		input.setCustomValidity("The two follow's email addresses must match!")
 	} else {
