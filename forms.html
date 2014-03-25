@@ -7,109 +7,138 @@
 	<title>Comp Registration</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
 	<script href="js/prefix-free.js"></script>
 	<script href="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<h1>
+	<section id="sectionbody">
+		<header>
 			<center>
-				MichComp 2014 Registration
+				<h1>
+					MichComp 2014 Registration
+				</h1>
 			</center>
-		</h1>
-	</header>
+		</header>
 
-	<form method="post">
-		<div class="row">
-			<h2>Lead Info.</h2>
-		</div>
+		<section>
 
-		<div class="row">
-			<div class="col-xs-6">
-				First Name:
-				<input type="text" name="first1" size="10" value="" id="input">
+			<form method="post">
+				<div class="row">
+					<h2>First, lead info:</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">
+						First Name:
+						<input type="text" name="first1" id="input">
+					</div>
+					<div class="col-xs-6">
+						Last Name:
+						<input type="text" name="last1" id="input">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">
+						Email Address:
+						<input type="text" name="email1" id="input">
+					</div>
+					<div class="col-xs-6">
+						Verify Email Address:
+						<input type="text" name="email1check" id="input">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-7">
+						School:
+						<input type="text" name="school1" id="input">
+					</div>
+					<div class="col-xs-5">
+						<p>Phone Number:
+							<input type="float" name="phone1" id="input" placeholder="555-555-5555">
+						</p>
+					</div>
+				</div>
+
+		</section>
+
+		<section>
+			<div class="row">
+				<h2>Follow Info.</h2>
 			</div>
-			<div class="col-xs-6">
-				Last Name:
-				<input type="text" name="last1" size="10" value="" id="input">
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-xs-4">
-				School:
-				<input type="text" name="school1" size="15" value="" id="input">
-			</div>
-
-			<div class="col-xs-4">
-				Email Address:
-				<input type="text" name="email1" size="15" value="" id="input">
+			<div class="row">
+				<div class="col-xs-6">
+					First Name:
+					<input type="text" name="first2" id="input">
+				</div>
+				<div class="col-xs-6">
+					Last Name:
+					<input type="text" name="last2" id="input">
+				</div>
 			</div>
 
-			<div class="col-xs-4">
-				Verify Email Address:
-				<input type="text" name="email1check" size="15" value="" id="input">
+			<div class="row">
+				<div class="col-xs-6">
+					Email Address:
+					<input type="text" name="email2" id="input">
+				</div>
+				<div class="col-xs-6">
+					Verify Email Address:
+					<input type="text" name="email2check" id="input">
+				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col-xs-7">
+					School:
+					<input type="text" name="school2" id="input">
+				</div>
+				<div class="col-xs-5">
+					<p>Phone Number:
+						<input type="float" name="phone2" id="input">
+					</p>
+				</div>
+			</div>
+		</section>
 
-		<p>Phone Number:
-			<input type="float" name="phone1" size="15" value="" id="input">
-		</p>
-
-		<p>Follow Info.</p>
-		<p>First Name:
-			<input type="text" name="first2" size="10" value="" id="input">
-		</p>
-		<p>Last Name:
-			<input type="text" name="last2" size="10" value="" id="input">
-		</p>
-		<p>School:
-			<input type="text" name="school2" size="15" value="" id="input">
-		</p>
-		<p>Email Address:
-			<input type="text" name="email2" size="15" value="" id="input">
-		</p>
-		<p>Email Address:
-			<input type="text" name="email2check" size="15" value="" id="input">
-		</p>
-		<p>Phone Number:
-			<input type="float" name="phone2" size="15" value="" id="input">
-		</p>
-
-		<p>Select Your Dances</p>
-		<p>
-			<label for="level1">Level:
-				<select name="level1" id="level1">
-					<option value="">Choose your level</option>
-					<option value="Newcomer">Newcomer</option>
-					<option value="Bronze">Bronze</option>
-					<option value="Silver">Silver</option>
-					<option value="Gold">Gold</option>
-					<option value="Novice">Novice</option>
-					<option value="Pre-Champ">Pre-Champ</option>
-					<option value="Champ">Champ</option>
-				</select>
-			</label>
-		</p>
+		<section>
+			<div class="row">
+				<p>Select Your Dances</p>
+				<p>
+					<label for="level1">Level:
+						<select name="level1" id="level1">
+							<option value=" ">Choose your level</option>
+							<option value="Newcomer">Newcomer</option>
+							<option value="Bronze">Bronze</option>
+							<option value="Silver">Silver</option>
+							<option value="Gold">Gold</option>
+							<option value="Novice">Novice</option>
+							<option value="Pre-Champ">Pre-Champ</option>
+							<option value="Champ">Champ</option>
+						</select>
+					</label>
+				</p>
+			</div>
+		</section>
 
 
 		<center>
-			<input type="submit" value="Update" class="button">
-			<input type="button" value="Logout" onclick="" class="button">
+			<div class="row">
+				<input type="submit" value="Submit" class="button" id="submit">
+			</div>
 		</center>
-		</p>
 
-	</form>
+		</form>
 
-	<footer>
+		<footer>
 
-	</footer>
+		</footer>
 
-	<script src="js/javascript.js"></script>
-
+		<script src="js/javascript.js"></script>
+	</section>
 </body>
 
 </html>
