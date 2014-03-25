@@ -1,18 +1,20 @@
 //called from onChange
-function checklead(input) {
-	if (document.getElementById('email1').value != input) {
-		input.setCustomValidity("The two lead's email addresses must match!")
+function checklead(laddress2) {
+	laddress1 = $('[name="email1"]');
+	if (laddress2.value != laddress1.val()) {
+		$("#leaderror").html("The lead's email addresses must match!");
 	} else {
 		//input is valid -- reset the error message
-		input.setCustomValidity('');
+		$("#leaderror").html("");
 	}
 }
 
-function checkfollow(input) {
-	if (document.getElementById('email2').value != input) {
-		input.setCustomValidity("The two follow's email addresses must match!")
+function checkfollow(faddress2) {
+	faddress1 = $('[name="email2"]');
+	if (faddress2.value != faddress1.val()) {
+		$("#followerror").html("The two follow's email addresses must match!")
 	} else {
 		//input is valud -- reset the error message
-		input.setCustomValidity('');
+		$("#folowerror").html("");
 	}
 }
