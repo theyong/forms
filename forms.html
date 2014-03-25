@@ -15,14 +15,16 @@
 <body>
 	<header>
 		<h1>
-			MichComp 2014 Registration
+			<center>
+				MichComp 2014 Registration
+			</center>
 		</h1>
 	</header>
 
 	<form method="post">
-		<p>Lead Info.</p>
+		<h2>Lead Info.</h2>
 		<p>First Name:
-			<input type="text" name="first1" size="10" value="<?php echo(htmlentities($first1)); ?>">
+			<input type="text" name="first1" size="10" value="<?php echo(htmlentities($first1)); ?>" id="input">
 		</p>
 		<p>Last Name:
 			<input type="text" name="last1" size="10" value="<?php echo(htmlentities($last1)); ?>">
@@ -60,17 +62,32 @@
 			<input type="float" name="phone2" size="15" value="<?php echo(htmlentities($phone2)); ?>">
 		</p>
 
+<<<<<<< HEAD
+		<p>Select Your Dances</p>
+		<p>Level:
+			<input type="float" name="phone2" size="15" value="<?php echo(htmlentities($phone2)); ?>">
+		</p>
+=======
     <p>Select Your Dances</p>
     <p>
     	<label for="level1">Level:
     	<select name="level1" id="level1">
     		<option value="">Choose your level</option>
-    		<option value="bronze">Bronze</option>
+    		<option value="Newcomer">Newcomer</option>
+        <option value="Bronze">Bronze</option>
+        <option value="Silver">Silver</option>
+        <option value="Gold">Gold</option>
+        <option value="Novice">Novice</option>
+        <option value="Pre-Champ">Pre-Champ</option>
+        <option value="Champ">Champ</option>
     	</select>
-    		
-    		
     	</label>
     </p>
+<<<<<<< HEAD
+    
+=======
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 
 
 
@@ -78,7 +95,7 @@
 		<input type="button" value="Logout" onclick="location.href='logout.php'; return false">
 		</p>
 
-  
+
 	</form>
 
 	<footer>
