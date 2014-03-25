@@ -1,24 +1,13 @@
-<?php
-    session_start();
-    if ( isset($_GET["sugar"]) && isset($_GET["spice"]) &&
-        isset($_GET["vanilla"]) ) {
-        $_SESSION['sugar'] = $_GET['street'];
-        $_SESSION['spice'] = $_GET['city'];
-        $_SESSION['vanilla'] = $_GET['vanilla'];
-        header( 'Location: index.php' ) ;
-        return;
-    }      
-?> <!-- IGNORE FOR NOW -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Comp Registration</title>
 	<link rel="stylesheet" href="style.css">
 
+	<script href="prefix-free.js"></script>
 </head>
 
 <body>
@@ -28,6 +17,7 @@
     </h1>
 </header>
 
+<<<<<<< HEAD
   <form method="post">
 <p>Lead Info.</p>
 <p>First Name: <input type="float" name="sugar" size="5" 
@@ -62,6 +52,24 @@
 <input type="button" value="Logout"
   onclick="location.href='logout.php'; return false"></p>
 </form>
+=======
+	</header>
+
+	<p>Sign up for ballroom dancing!</p>
+	<form method="post">
+		<p>Name:
+			<input type="text" name="name" size="10" value="">
+		</p>
+		<p>Gender:
+			<input type="text" name="gender" size="10" value="">
+		</p>
+		<p>School:
+			<!-- Dropdown menu here? -->
+			<input type="text" name="school" size="15" value="">
+		</p>
+
+	</form>
+>>>>>>> FETCH_HEAD
 
 	<footer>
 
