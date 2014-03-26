@@ -1,3 +1,6 @@
+* {
+    color: #000;
+}
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: normal;
@@ -21,6 +24,23 @@
 	font-style: normal;
 	font-weight: 700;
 	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+}
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
 #input {
 	width: 100%;
@@ -49,6 +69,8 @@ section {
 	max-width: 800px;
 	margin: 0 auto 0 auto;
 	padding: 2em;
+    background-color: #fff;
+    opacity: 0.8;
 }
 #submit {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -92,4 +114,24 @@ select {
 }
 .checkbox {
     font-weight: 400;
+}
+#smallimg {
+    visibility: visible;
+}
+#bigimg {
+    visibility: hidden;
+}
+@media only screen and (min-width: 785px) {
+    section {
+        padding: 3em;
+    }
+    .dances {
+        display: table;
+    }
+    #smallimg {
+        visibility: hidden;
+    }
+    #bigimg {
+        visibility: visible;
+    }
 }
