@@ -1,10 +1,9 @@
 <?php
     //take everything and put it into the CSV file
     $filename = "formFile.csv";
-    
     $handle = fopen($filename, 'a');
     $msg = "Thank you for registering!";
-    $fileInfo "";
+    $fileInfo = "";
     
     foreach($_POST as $name => $value) {
         print "$name : $value<br/>";
@@ -13,20 +12,26 @@
     }
     $fileInfo .= "\n";
 
-    /*Write to file*/
+    //Write to file
     fwrite($handle, $fileInfo);
-    //now close the file
+    //Close the file
     fclose($handle);
 
     //Send comfirmation email to the user
-	$msg = "Thank you for your info";//EMail message
-	
+    $to = "josh.blumberg@live.com";//us
+    $from = $_POST['email1'];//lead's email
+    $first_name = $_POST['first1'];//lead's first name
+    $last_name = $_POST['last1'];//lead's last name
+    $subject = "MichComp Registration Submission";
+    
+    $msg = "Thank you for your info";//EMail message
 	foreach($_POST as $name => $value) {
 		print "$name : $value<br/>";
 		$msg .="$name : $value\n";
-	} //the dot before the "=" concatonates
-	$to = "josh.blumberg@live.com";//Put in your email here
-	$headers = "From: ". $_POST["name"] ."<".$_POST["email"]. ">\r\n";	
-	mail($to, 'Registration', $msg,$headers);
-	echo "Email sent";
+	}
+
+	$headers = "From: ". $first_name . " " . $last_name ."<". $from . ">\r\n";
+	mail($to, $subject, $msg, $headers);
+    mail($from, $subject, $msg, $headers);
+	echo "Thank you, your registration form has been received! See you at the competition!";
 ?>
