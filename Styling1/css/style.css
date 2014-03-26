@@ -1,5 +1,5 @@
 * {
-    color: #000;
+	color: #000;
 }
 @font-face {
 	font-family: 'Source Sans Pro';
@@ -26,21 +26,22 @@
 	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
 }
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	z-index: -999;
 }
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
 }
 #input {
 	width: 100%;
@@ -62,15 +63,12 @@ h2 {
 	font-weight: light;
 	font-family: 'Roboto', sans-serif;
 }
-.row {
-	margin-top: 1em;
-}
+
 section {
 	max-width: 800px;
 	margin: 0 auto 0 auto;
 	padding: 2em;
-    background-color: #fff;
-    opacity: 0.8;
+	background-color: #fff;
 }
 #submit {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -80,7 +78,7 @@ section {
 	border: none;
 	width: 40%;
 	min-width: 150px;
-	height: auto;
+	height: 40px;
 	padding: 5px;
 	transition: all .2s ease-in;
 }
@@ -104,34 +102,37 @@ section {
 select {
 	border: 1px #ccc solid;
 	width: 100%;
-	min-width: 500px;
+	min-width: 300px;
 	height: 2.3em;
-	background: url(down.png) no-repeat right #fff;
 	overflow: hidden;
 }
 #level1 {
 	margin-top: 3px;
 }
 .checkbox {
-    font-weight: 400;
+	font-weight: 400;
 }
 #smallimg {
-    visibility: visible;
+	visibility: visible;
+	z-index: -100;
 }
 #bigimg {
-    visibility: hidden;
+	visibility: hidden;
 }
 @media only screen and (min-width: 785px) {
-    section {
-        padding: 3em;
-    }
-    .dances {
-        display: table;
-    }
-    #smallimg {
-        visibility: hidden;
-    }
-    #bigimg {
-        visibility: visible;
-    }
+	section {
+		padding: 3em;
+	}
+	.dances {
+		display: table;
+	}
+	#smallimg {
+		visibility: hidden;
+	}
+	#bigimg {
+		visibility: visible;
+	}
+}
+div {
+	padding: .5em;
 }

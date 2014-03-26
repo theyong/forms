@@ -11,13 +11,13 @@
 
 	<script href="js/prefix-free.js"></script>
 	<script href="js/bootstrap.min.js"></script>
-</head>  
+</head>
 
 <div id="bg">
-    <img src="BWny.jpg" id="smallimg" alt="Background Image"/>
-    <img src="connection.jpg" id="bigimg" alt="Background Image"/>
+	<img src="BWny.jpg" id="smallimg" alt="Background Image" />
+	<img src="connection.jpg" id="bigimg" alt="Background Image" />
 </div>
-    
+
 <body>
 	<section id="sectionbody">
 		<header>
@@ -34,34 +34,34 @@
 				</div>
 
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-5">
 						First Name:
 						<input type="text" name="first1" id="input">
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-7">
 						Last Name:
 						<input type="text" name="last1" id="input">
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-6">
 						Email Address:
 						<input type="text" name="email1" id="input">
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-6">
 						Verify Email Address:
-						<input type="text" name="email1check" id="input" onchange="checklead(this)";>
+						<input type="text" name="email1check" id="input" onchange="checklead(this)" ;>
 					</div>
-                    <div class="col-xs-6" id="leaderror"></div>
+					<div class="col-xs-6" id="leaderror"></div>
 				</div>
 
 				<div class="row">
-					<div class="col-xs-7">
+					<div class="col-xs-12 col-sm-7">
 						School:
 						<input type="text" name="school1" id="input">
 					</div>
-					<div class="col-xs-5">
+					<div class="col-xs-12 col-sm-5">
 						<p>Phone Number:
 							<input type="float" name="phone1" id="input" placeholder="555-555-5555">
 						</p>
@@ -75,33 +75,33 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-5">
 					First Name:
 					<input type="text" name="first2" id="input">
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-7">
 					Last Name:
 					<input type="text" name="last2" id="input">
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					Email Address:
 					<input type="text" name="email2" id="input">
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					Verify Email Address:
-					<input type="text" name="email2check" id="input" onchange="checkfollow(this)";>
+					<input type="text" name="email2check" id="input" onchange="checkfollow(this)" ;>
 				</div>
-                <div class="col-xs-6" id="followerror"></div>
+				<div class="col-xs-6" id="followerror"></div>
 			</div>
 			<div class="row">
-				<div class="col-xs-7">
+				<div class="col-xs-12 col-sm-7">
 					School:
 					<input type="text" name="school2" id="input">
 				</div>
-				<div class="col-xs-5">
+				<div class="col-xs-12 col-sm-5">
 					Phone Number:
 					<input type="float" name="phone2" id="input" placeholder="555-555-5555">
 				</div>
@@ -110,7 +110,8 @@
 
 		<section>
 			<div class="row">
-				<h2>Select Your Dances</h2>
+				<div class="col-xs-12">
+					<h2>Select Your Dances</h2>
 					<label for="level1">Level:
 						<select name="level1" id="level1">
 							<option value=" ">Choose your level</option>
@@ -123,108 +124,109 @@
 							<option value="Champ">Champ</option>
 						</select>
 					</label>
+				</div>
 			</div>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 dances">
-                    <h2>Smooth</h2>
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amwaltz">Am. Waltz</label>
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amtango">Am. Tango</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amfox">Am. Foxtrot</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amvwaltz">Am. Viennese Waltz</label> 
-                    </div>
-                </div>
-                    
-                <div class="col-xs-12 col-sm-6 dances">
-                    <h2>Standard</h2>
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlwaltz">Intl. Waltz</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlquick">Intl. Quickstep</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intltango">Intl. Tango</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlfox">Intl. Foxtrot</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlvwaltz">Intl. Viennese Waltz</label> 
-                    </div>
-                </div>
-                
-                <div class="col-xs-12 col-sm-6 dances">
-                    <h2>Rhythym</h2>
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amcha">American Cha Cha</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amrumba">American Rumba</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="amswing">American Swing</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="ammambo">American Mambo</label> 
-                    </div>
-                </div>
-                
-                <div class="col-xs-12 col-sm-6 dances">
-                    <h2>Latin</h2>
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlcha">Intl. Cha Cha</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlrumba">Intl. Rumba</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intlsamba">Intl. Samba</label> 
-                    </div>
-                    
-                    <div class="box-label">
-                        <label class="checkbox">
-                            <input type="checkbox" name="dances[]" value="intljive">Intl. Jive</label> 
-                    </div>
-                </div>
-                    
-                </div>
-            </div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 dances">
+					<h2>Smooth</h2>
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amwaltz">Am. Waltz</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amtango">Am. Tango</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amfox">Am. Foxtrot</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amvwaltz">Am. Viennese Waltz</label>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 dances">
+					<h2>Standard</h2>
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlwaltz">Intl. Waltz</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlquick">Intl. Quickstep</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intltango">Intl. Tango</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlfox">Intl. Foxtrot</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlvwaltz">Intl. Viennese Waltz</label>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 dances">
+					<h2>Rhythym</h2>
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amcha">American Cha Cha</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amrumba">American Rumba</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="amswing">American Swing</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="ammambo">American Mambo</label>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 dances">
+					<h2>Latin</h2>
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlcha">Intl. Cha Cha</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlrumba">Intl. Rumba</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intlsamba">Intl. Samba</label>
+					</div>
+
+					<div class="box-label">
+						<label class="checkbox">
+							<input type="checkbox" name="dances[]" value="intljive">Intl. Jive</label>
+					</div>
+				</div>
+
+			</div>
+			</div>
 		</section>
 
 
@@ -239,50 +241,50 @@
 		<footer>
 
 		</footer>
-        
-        <!--Email Check-->
-        <script type="text/javascript" language="JavaScript">
-        //checklead & checkfollow don't work; left to show effort
-        function checklead(laddress2) {
-            laddress1 = $('[name="email1"]');
-            if (laddress2.value != laddress1.val()) {
-                $("#leaderror").html("<br/>The lead's email addresses must match!");
-            } else {
-                //input is valid -- reset the error message
-                $("#leaderror").html("");
-            }
-        }
 
-        function checkfollow(faddress2) {
-            faddress1 = $('[name="email2"]');
-            if (faddress2.value != faddress1.val()) {
-                $("#followerror").html("<br/>The follow's email addresses must match!");
-            } else {
-                //input is valud -- reset the error message
-                $("#followerror").html("");
-            }
-        }
-            
-        //THIS WORKS
-        function check(theForm) {
-            if (theForm.email1.value != theForm.email1check.value) {
-                alert("The lead's email addresses must match!");
-                return false;
-            }
-            else if(theForm.email2.value != theForm.email2check.value) {
-                alert("The follow's email addresses must match!");
-                return false;
-            }
-            else {
-                return true;
-            }
-        }
-        </script>
-        
+		<!--Email Check-->
+		<script type="text/javascript" language="JavaScript">
+			//checklead & checkfollow don't work; left to show effort
+			        function checklead(laddress2) {
+			            laddress1 = $('[name="email1"]');
+			            if (laddress2.value != laddress1.val()) {
+			                $("#leaderror").html("<br/>The lead's email addresses must match!");
+			            } else {
+			                //input is valid -- reset the error message
+			                $("#leaderror").html("");
+			            }
+			        }
+			
+			        function checkfollow(faddress2) {
+			            faddress1 = $('[name="email2"]');
+			            if (faddress2.value != faddress1.val()) {
+			                $("#followerror").html("<br/>The follow's email addresses must match!");
+			            } else {
+			                //input is valud -- reset the error message
+			                $("#followerror").html("");
+			            }
+			        }
+			            
+			        //THIS WORKS
+			        function check(theForm) {
+			            if (theForm.email1.value != theForm.email1check.value) {
+			                alert("The lead's email addresses must match!");
+			                return false;
+			            }
+			            else if(theForm.email2.value != theForm.email2check.value) {
+			                alert("The follow's email addresses must match!");
+			                return false;
+			            }
+			            else {
+			                return true;
+			            }
+			        }
+		</script>
+
 		<script>
 			$(function() { $('body').hide().show(); });
 		</script>
-                
+
 	</section>
 </body>
 
