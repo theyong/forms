@@ -63,12 +63,12 @@ h2 {
 	font-weight: light;
 	font-family: 'Roboto', sans-serif;
 }
-
 section {
 	max-width: 800px;
 	margin: 0 auto 0 auto;
 	padding: 2em;
 	background-color: #fff;
+    opacity: 0.8;
 }
 #submit {
 	font-family: 'Source Sans Pro', sans-serif;
