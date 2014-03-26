@@ -18,3 +18,23 @@ function checkfollow(faddress2) {
 		document.getElementById("folowerror").innerHTML="";
 	}
 }
+
+function check() {
+	lead1 = $('[name="email1"]');
+    lead2 = $('[name="email1check"]');
+	if (lead1.val() != lead2.val()) {
+		prompt("The lead's email addresses must match!");
+        return false;
+	} else {
+		return true;
+	}
+    
+    follow1 = $('[name="email2"]');
+    follow2 = $('[name="email2check"]');
+    if (follow1.val() != follow2.val()) {
+        prompt("The follow's email addresses must match!");
+        return false;
+    } else {
+        return true;
+    }
+}

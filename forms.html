@@ -23,7 +23,7 @@
 
 		<section>
 
-			<form action="process.php" method="POST">
+			<form action="process.php" method="POST" onsubmit="return check(this)">
 				<div class="row">
 					<h2>Lead Info</h2>
 				</div>
@@ -229,8 +229,8 @@
 		</footer>
         
         <!--Email Check-->
-        <script>
-        //called from onChange
+        <script type="text/javascript" language="JavaScript">
+        //checklead & checkfollow don't work; left to show effort
         function checklead(laddress2) {
             laddress1 = $('[name="email1"]');
             if (laddress2.value != laddress1.val()) {
@@ -248,6 +248,21 @@
             } else {
                 //input is valud -- reset the error message
                 $("#followerror").html("");
+            }
+        }
+            
+        //THIS WORKS
+        function check(theForm) {
+            if (theForm.email1.value != theForm.email1check.value) {
+                alert("The lead's email addresses must match!");
+                return false;
+            }
+            else if(theForm.email2.value != theForm.email2check.value) {
+                alert("The follow's email addresses must match!");
+                return false;
+            }
+            else {
+                return true;
             }
         }
         </script>
