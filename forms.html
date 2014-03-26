@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Comp Registration</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    
 
 	<script href="js/prefix-free.js"></script>
 	<script href="js/bootstrap.min.js"></script>
+    <script href="js/javascript.js"></script>
 </head>
 
 <body>
 	<section id="sectionbody">
 		<header>
 			<center>
-				<h1>
-					MichComp 2014 Registration
-				</h1>
+				<h1>MichComp 2014 Registration</h1>
 			</center>
 		</header>
 
@@ -26,7 +26,7 @@
 
 			<form action="process.php" method="POST">
 				<div class="row">
-					<h2>First, lead info:</h2>
+					<h2>Lead Info</h2>
 				</div>
 
 				<div class="row">
@@ -48,10 +48,7 @@
 					<div class="col-xs-6">
 						Verify Email Address:
 						<input type="text" name="email1check" id="input" onchange="checklead(this)">
-					</div>
-					<div class="col-xs-6">
-						<p id="leaderror"></p>
-					</div>
+					</div><p id="leaderror"></p><br/>
 				</div>
 
 				<div class="row">
@@ -65,12 +62,11 @@
 						</p>
 					</div>
 				</div>
-
 		</section>
 
 		<section>
 			<div class="row">
-				<h2>Follow Info.</h2>
+				<h2>Follow Info</h2>
 			</div>
 
 			<div class="row">
@@ -92,9 +88,6 @@
 				<div class="col-xs-6">
 					Verify Email Address:
 					<input type="text" name="email2check" id="input" onchange="checkfollow(this)">
-				</div>
-				<div class="col-xs-6">
-					<p id="followerror"></p>
 				</div>
 			</div>
 			<div class="row">
