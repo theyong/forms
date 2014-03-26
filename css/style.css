@@ -90,3 +90,6 @@ select {
 #level1 {
 	margin-top: 3px;
 }
+.checkbox {
+    font-weight: 400;
+}
