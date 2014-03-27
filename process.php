@@ -6,7 +6,6 @@
     $fileInfo = "";
     
     foreach($_POST as $name => $value) {
-        print "$name : $value<br/>";
         $msg .= "$name : $value\n";
         $fileInfo .= "$value,";
     }
@@ -24,7 +23,8 @@
     $last_name = $_POST['last1'];//lead's last name
     $subject = "MichComp Registration Submission";
     
-    $msg = "Thank you for your info";//EMail message
+    $msg = "Thank you for registering!\n";//EMail message
+    print "Thank you for registering!<br/>";
 	foreach($_POST as $name => $value) {
 		print "$name : $value<br/>";
 		$msg .="$name : $value\n";
@@ -33,5 +33,5 @@
 	$headers = "From: ". $first_name . " " . $last_name ."<". $from . ">\r\n";
 	mail($to, $subject, $msg, $headers);
     mail($from, $subject, $msg, $headers);
-	echo "Thank you, your registration form has been received! See you at the competition!";
+	echo "See you at the competition!";
 ?>
