@@ -1,1 +1,98 @@
-/*THIS STYLESHEET IS FOR OUR SECOND FORM DESIGN*/
+html{
+	background-color: #000;
+}
+h1, h2, div, p, label, option, input {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	font-size: 1.05em;
+	line-height: normal;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+}
+#input {
+	width: 100%;
+	height: 2.3em;
+	margin-top: 3px;
+}
+body {
+	padding: 5em;
+	margin: 5em;
+}
+h1 {
+	font-size: 6em;
+	font-weight: 700;
+}
+h2 {
+	font-size: 3.5em;
+	font-weight: bold;
+}
+div > label > input {
+	font-size: 2.5em;
+}
+section {
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+	padding: 2em;
+	background-color: #000;
+	opacity: 0.95;
+}
+#submit {
+	font-size: 1.4em;
+	color: #fff;
+	background-color: #00B85C;
+	border: none;
+	width: 40%;
+	min-width: 150px;
+	height: 40px;
+	padding: 5px;
+	transition: all .2s ease-in;
+}
+#submit:hover {
+	background-color: #fff;
+	color: #00B85C;
+	border: 1px #00B85C solid;
+}
+#submit:active {
+	width: 38%;
+	min-width: 128px;
+}
+#school1 {
+	width: 100%;
+	margin-top: 3px;
+	height: 2.3em;
+}
+#sectionbody {
+	background-color: #000;
+}
+select {
+	border: 3px #ccc solid;
+	width: 100%;
+	min-width: 300px;
+	height: 2.3em;
+	overflow: hidden;
+}
+#level1 {
+	margin-top: 3px;
+}
+.checkbox {
+	font-weight: 400;
+}
+
+@media only screen and (min-width: 785px) {
+	section {
+		padding: 3em;
+	}
+	.dances {
+		display: table;
+	}
+	#smallimg {
+		visibility: hidden;
+	}
+	#bigimg {
+		visibility: visible;
+	}
+}
+div {
+	padding: .5em;
+}
